@@ -81,6 +81,11 @@ html {
     cursor: pointer;
 }
 
+.wrapper__header__btn--generator:hover {
+   cursor: pointer;
+   opacity: 0.7;
+}
+
 hr{
     width: 50px;
     border-color: transparent;
