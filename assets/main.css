@@ -81,18 +81,6 @@ html {
     cursor: pointer;
 }
 
-@media (max-width:740px) {
-.wrapper__header__btn--generator {
-    right: 145px;
-}
-.wrapper__header--to {
-    margin-right: 15px;
-}
-.wrapper__header--text {
-  margin-right: 20px;
-}
-}
-
 hr{
     width: 50px;
     border-color: transparent;
