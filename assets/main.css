@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background: url('https://media.istockphoto.com/photos/closeup-of-raindrops-on-window-glass-picture-id927446996?b=1&k=20&m=927446996&s=170667a&w=0&h=rVDCvRn8pYf51oMGZKQSlSEXkFDUyMMvfp5eCclseaA=') center /cover no-repeat;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+   background-color: rgba(0, 0, 0, 0.3);
+   height: 38%;
+   width: 500px;
+   margin: auto;
+   border-radius: 5px;
+}
+
+.wrapper__header {
+   height: 25%;
+   position: relative;
+}
+
+.wrapper__header--text {
+  margin: 0;
+  text-align: center;
+  line-height: 72.2px;
+  color: aliceblue;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.wrapper__header--from , 
+.wrapper__header--to {
+   position: absolute;
+   width: 60px;
+   border-radius: 5px;
+}
+
+.wrapper__header--from {
+  left: 0;
+  margin-left: 10px;
+}
+
+.wrapper__header--to {
+  right: 0;
+  margin-right: 10px;
+}
+
+.wrapper__body {
+   height: 40%;
+   text-align: center;
+   line-height: 115.112px;
+   color: aliceblue;
+   font-size: 60px;
+   border-bottom: 3px solid seashell;
+   margin: 0 10px;
+}
+
+.wrapper__footer {
+   height: 35%;
+   text-align: center;
+}
+
+.wrapper__header__btn--generator {
+    position: absolute;
+    display: inline-block;
+    text-decoration: none;
+    padding: 11px 14px;
+    color: black;
+    background-color: aliceblue;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 22px;
+    bottom: -189px;
+    right: 189px;
+    cursor: pointer;
+}
+
+@media (max-width:740px) {
+.wrapper__header__btn--generator {
+    right: 145px;
+}
+.wrapper__header--to {
+    margin-right: 15px;
+}
+.wrapper__header--text {
+  margin-right: 20px;
+}
+}
+
+hr{
+    width: 50px;
+    border-color: transparent;
+    border-right-color: rgba(255, 255, 255, 0.7);
+    border-right-width: 50px;
+    position: absolute;
+    bottom: 100%;
+    transform-origin: 100% 50%;
+    animation-name: rain;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+@keyframes rain {
+    from {
+     transform: rotate(105deg) translateX(0);
+    }
+   
+    to {
+     transform: rotate(105deg) translateX(calc(100vh + 20px));
+    }
+}
