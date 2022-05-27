@@ -3,7 +3,8 @@ var randomNum = document.querySelector('.wrapper__body');
 function result() {
     var valueFrom = +document.querySelector('.wrapper__header--from').value;
     var valueTo =  +document.querySelector('.wrapper__header--to').value;
-    randomNum.innerText = Math.floor(Math.random()*(valueTo - valueFrom + 1)) + valueFrom ;
+    var result_ =  Math.floor(Math.random()*(valueTo - valueFrom + 1)) + valueFrom ;
+    randomNum.innerText = (result_ == 32 ? valueFrom : result_);
 }
 
 // rain animation 
